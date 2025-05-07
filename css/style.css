@@ -1,0 +1,697 @@
+body{
+    margin: 0;
+    padding: 0;
+background-color: #E8AEB9;
+overflow-x: hidden;
+}
+
+.barra{
+    background-color: #F9D6DC;
+    height: 80px;
+    width: auto;
+    display: flex;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+
+.logo{
+    width: 80px;
+    border-radius: 50px;
+    position: relative;
+    left: 10px;
+}
+
+.l1{
+    font-family: "Lilita One";
+    color: #8D7AC6;
+    position: relative;
+    left: 35px;
+    top: -18px;
+    font-size: 37px;
+}  
+
+.l2{
+    font-family: "Playwrite DK Loopet";
+    color: #F28CA3;
+    position: relative;
+    top: -54px;
+    font-size: 21px;
+    left: 38px;
+    z-index: 1000;
+}
+
+.secciones{
+    position: relative;
+    left: 500px;
+    top: 10px;
+}
+
+#menu{
+    display: flex;
+}
+
+#menu a{
+    text-decoration: none;
+    color: white;
+}
+
+#menu a:hover{
+    color: #F28CA3;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+
+
+#menu ul{
+    list-style: none;
+}
+
+#menu li{
+    display: inline-block;
+    margin-left: 30px;
+    font-family: "anton";
+    font-size: 20px;
+    color: #fff;
+}
+
+
+
+.seccion-fondo {
+    position: relative;
+    height: 600px; 
+    background-image: url('../img/fondo.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll; 
+    overflow: hidden;
+  }
+  
+  .seccion-fondo::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .seccion-fondo .contenido {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+
+
+.titulo{
+    font-family: "playwrite dk loopet";
+    font-size: 30px;
+}
+
+.p{
+    font-family: "cal sans";
+    font-size: 18px;
+    position: relative;
+    top: -20px;
+}
+
+#ver-productos-btn {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid #F9D6DC;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+#ver-productos-btn:hover {
+    background: #F9D6DC;
+    box-shadow: 0 0 30px 5px rgba(249, 214, 220, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+ #ver-productos-btn:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+ #ver-productos-btn::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 20px 10px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+ #ver-productos-btn:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+
+  .contenido-productos{
+    background-color: #E8AEB9;
+  }
+
+  section{
+    padding: 0;
+    margin: 0;
+  }
+
+  .Productostxt{
+    color:#fff;
+    font-family: "playwrite dk loopet";
+    font-size: 35px;
+    position: relative;
+    left: 37%;
+    top: 40px;
+    width: 400px;
+  }
+
+  .h1-producto{
+padding-bottom: 80px;
+  }
+
+  .carta{
+    background-color: #F3C7D1;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 35px;
+  }
+
+  .carta:hover{
+    box-shadow: 0 0 70px #F28CA3 ;
+    transition: 0.5s;
+
+  }
+
+  .imagen{
+    width: 10px;
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .imagen-carta{
+    background-color: black;
+    width: 220px;
+    height: 250px;
+    margin: 10px;
+    position: relative;
+    left: 26px;
+    top: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 33px;
+  }
+
+  .texto-carta{
+    color: white;
+    margin: 10px;
+    font-family: "pt serif";
+    position: relative;
+    left: 20px;
+  }
+
+  .carta ul{
+    color: white;
+  }
+
+  .btn-carta{
+    border: none;
+    position: relative;
+    left: 120px;
+    top: -30px;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #F28CA3;
+    color: white;
+  }
+
+    .btn-carta:hover{
+    box-shadow: 0 0 30px #F28CA3 ;
+    transition: 0.5s;
+    transform: scale(1.1);
+    transition: transform 0.5s ease; 
+    }
+    .carta:hover{
+      transform: scale(1.01);
+      transition: transform 0.5s ease; 
+    }
+
+.card-main{
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.fondo-nosotros{
+  position: relative;
+  height: 600px; 
+  background-image: url('../img/fondo\ 2.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll; 
+  overflow: hidden;
+}
+
+.fondo-nosotros::before{
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.h1-nosotros{
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+font-family: "playwrite dk loopet";
+}
+
+.nostros-h1{
+  font-size: 32px;
+}
+
+
+.carta-nosotros{
+  position: relative;
+background-color: red;
+z-index: 2;
+width:230px;
+height:300px;
+margin-left: 200px;
+margin-top: 56px;
+border-radius: 20px;
+}
+
+.img-nosotros{
+  position: relative;
+  z-index: 2; 
+  box-shadow: 0px 0px 20px #F28CA3;
+  border-radius:20px ;
+  outline: 2px solid #F28CA3;
+}
+
+.contenido-nos{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.texto-nos{
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+  left: 500px;
+  top: -390px;
+  height: 300px;
+  width: 400px;
+  color: white;
+}
+.texto-nos h1{
+  font-family: "lobster two";
+  font-size: 30px;
+  position: relative;
+  left: 100px;
+}
+
+.texto-nos p{
+  font-family: "cal sans";
+
+}
+
+
+.contac-contenido{
+  background-color: #E8AEB9;
+}
+
+.con-h1{
+  font-family: "playwrite dk loopet";
+  font-size: 30px;
+  position: relative;
+  left: 37%;
+  color: white;
+}
+
+
+.con-main{
+  background-color: #E8AEB9;
+  height: 600px;
+}
+
+
+
+
+
+
+.example-2 {
+  list-style: none;
+}
+
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.example-2 .icon-content {
+  margin: 0 10px;
+  position: relative;
+  top: 160px;
+  right: 50px;  
+  
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+}
+.example-2 .icon-content a:hover {
+  color: white;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.example-2 .icon-content a[data-social="whatsapp"] .filled,
+.example-2 .icon-content a[data-social="whatsapp"] ~ .tooltip {
+  background-color: #128c7e;
+}
+
+.example-2 .icon-content a[data-social="facebook"] .filled,
+.example-2 .icon-content a[data-social="facebook"] ~ .tooltip {
+  background-color: #3b5998;
+}
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
+}
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+  background-color: #ff0000;
+}
+
+
+
+footer{
+  background-color: #F9D6DC;
+  position: relative;
+  height: 80px;
+  color: #e1306c;
+  font-family: "cal sans";
+}
+
+footer p{
+  position: relative;
+  top: 30px;
+  left:526px ;
+  font-size: 20px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+.secciones{
+  display: none;
+} 
+
+
+  
+  #menu {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+  }
+  
+  #menu li {
+      display: block;
+      margin: 10px 0;
+      text-align: center;
+  }
+  
+ 
+  .card-main {
+      grid-template-columns: 1fr;
+  }
+  
+  .carta {
+      
+      margin: 15px auto;
+  }
+  
+  .imagen-carta {
+      left: 47%;
+        transform: translateX(-50%);
+  }
+  
+  .Productostxt {
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 28px;
+  }
+  
+
+  .contenido-nos {
+      grid-template-columns: 1fr;
+  }
+  
+.carta-nosotros{
+width: 120px;
+height: 190px;
+right: 50px;
+}
+
+.img-nosotros{
+  width: 120px;
+}
+
+  
+  .texto-nos {
+    position: absolute;
+      left: -140px;
+     font-size: 10px;
+     top: 50px;
+     top: 200px;
+  }
+  
+  .texto-nos h1 {
+      left: 0;
+      text-align: center;
+  }
+  
+  /* Contacto */
+  .con-h1 {
+      left: 0;
+      width: 100%;
+      text-align: center;
+  }
+
+  .example-2 .icon-content a {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .example-2 .icon-content a svg {
+    width: 50px;
+    height: 50px;
+  }
+
+
+
+  
+  .example-2 .icon-content {
+      top: 50px;
+      margin: 20px ;
+      left: -30px;
+  }
+
+  .con-main{
+    height: 300px;
+  }
+  
+  /* Footer */
+  footer p {
+      left: 0;
+      width: 100%;
+      text-align: center;
+  }
+}
+
+
+
+
+
+.boton-menu-celular {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: -225px;
+  background-color: #F28CA3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  width: 70px;
+}
+
+
+
+
+
+.menu-celular {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: -245px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.menu-celular a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-celular a:hover {
+  background-color: #f1f1f1;
+}
+
+
+.mostrar-menu {
+  display: block;
+}
+
+
+.contenedor-menu-celular {
+  position: relative;
+  display: inline-block;
+}
+
+
+@media (max-width:2000px) {
+  .contenedor-menu-celular {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-menu-celular {
+    display: inline-block;
+  }
+}
