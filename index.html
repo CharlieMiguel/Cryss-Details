@@ -233,7 +233,8 @@
       <a
         data-social="whatsapp"
         aria-label="Whatsapp"
-        href="https://web.whatsapp.com/send?phone=18097179875&text=hola" target="blank"
+          target="_blank"
+        onclick="(function(el){ const p='18097179875', t=encodeURIComponent('hola'); const m=/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent); el.href = m ? `whatsapp://send?phone=${p}&text=${t}` : `https://web.whatsapp.com/send?phone=${p}&text=${t}`; })(this)"
       >
         <div class="filled"></div>
         <svg
