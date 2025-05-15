@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryss Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image" href="img/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Cal+Sans&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Lilita+One&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+DK+Loopet&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<header class="barra">
+    <div class="logo">
+        <img src="img/logo.jpg" alt="logo" class="logo">
+    </div>
+    <div class="nombre">
+        <h1 class="l1">Cryss</h1>
+        <h1 class="l2">Details</h1>
+    </div>
+
+
+    <div class="secciones">
+        <ul id="menu">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#Productos">Productos</a>
+            </li>
+            <li>
+                <a href="#ofertas">Ofertas</a>
+            </li>
+            <li>
+                <a href="#sobrenosotros">Sobre Nosotros</a>
+            </li>
+            <li>
+                <a href="#contacto">Contactanos</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="contenedor-menu-celular">
+        <button class="boton-menu-celular" id="botonMenuCelular">
+            Menu
+        </button>
+        <div class="menu-celular" id="menuCelular">
+            <a href="#home">Home</a>
+            <a href="#Productos">Productos</a>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#sobrenosotros">Sobre Nosotros</a>
+            <a href="#contacto">Contactanos</a>
+        </div>
+    </div>
+
+
+
+</header>
+
+
+
+<section id="home">
+
+<div class="contenido">
+    
+    <div class="seccion-fondo">
+        <div class="contenido">
+          <h1 class="titulo">Bienvenido a Cryss Details</h1>
+          <p class="p">Encuentra tus regalos ideales aquí <br>
+             regalos personalizados <br>
+             diseños de t-shirts <br>
+             etc</p>
+
+             <a href="#Productos">
+             <button id="ver-productos-btn">Ver Productos</button>
+            </a>
+        </div>
+      </div>
+      
+</div>
+
+</section>
+
+
+<section id="Productos">
+
+    <div class="contenido-productos">
+        <div class="h1-producto">
+        <h1 class="Productostxt">Nuestros Productos</h1>
+        </div>
+        <div class="carta-container">
+            <div class="card-main">
+                <div class="carta">
+                <div class="imagen-carta">
+                <img class="imagen" src="img/vaso.jpg" alt="">
+                </div>
+                <div class="texto-carta">
+                <p>Vasos personalizados 
+                   <br> con nombre o diseños</p>
+                </div>
+                <ul>
+                    <li>De Cristal</li>
+                    <li>Termos</li>
+                    <button onclick="baso()" class="btn-carta">Ordenar</button>
+                </ul>
+            </div>
+                <!-- fin -->
+                <div class="carta">
+                    <div class="imagen-carta">
+                    <img class="imagen" src="img/llavero.jpg" alt="">
+                    </div>
+                    <div class="texto-carta">
+                    <p>llaveros personalizados con fotos</p>
+                    </div>
+                    <ul>
+                        <li>Corazon</li>
+                        <li>Circular</li>
+                        <button onclick="llavero()" class="btn-carta">Ordenar</button>
+                    </ul>
+                </div>
+                <!-- fin -->
+                <div class="carta">
+                    <div class="imagen-carta">
+                    <img class="imagen" src="img/taza.jpeg" alt="">
+                    </div>
+                    <div class="texto-carta">
+                    <p>Tazas personalizadas con
+                         <br> diseños creativos</p>
+                    </div>
+                    <ul>
+                        <li>Tradicionales</li>
+                        <li>Con colores</li>
+                        <button onclick="taza()"  class="btn-carta">Ordenar</button>
+                    </ul>
+                </div>
+                <!-- fin -->
+                <div class="carta">
+                    <div class="imagen-carta">
+                    <img class="imagen" src="img/colacan.jpeg" alt="">
+                    </div>
+                    <div class="texto-carta">
+                    <p>Colacam con el diseño que quieras</p>
+                    </div>
+                    <ul>
+                        <li>Nombre</li>
+                        <li>Diseño</li>
+                        <button onclick="colacam()" class="btn-carta">Ordenar</button>
+                    </ul>
+                </div>
+                <!-- fin -->
+                <div class="carta">
+                    <div class="imagen-carta">
+                    <img class="imagen" src="img/caja.jpeg" alt="">
+                    </div>
+                    <div class="texto-carta">
+                    <p>Diferentes variaciones de cajas
+                        <br> con lo que pidas</p>
+                    </div>
+                    <ul>
+                        <li>Varios tamaños</li>
+                        <li>Varios Estilos</li>
+                        <button onclick="caja()" class="btn-carta">Ordenar</button>
+                    </ul>
+                </div>
+                <!-- fin -->
+                <div class="carta">
+                    <div class="imagen-carta">
+                    <img class="imagen" src="img/bandeja.jpeg" alt="">
+                    </div>
+                    <div class="texto-carta">
+                    <p>Bandejas de Diferentes tamaños
+                        <br> y estilos</p>
+                    </div>
+                    <ul>
+                        <li>Con picaderas</li>
+                        <li>Con peluches</li>
+                        <button onclick="bandeja()"  class="btn-carta">Ordenar</button>
+                    </ul>
+                </div>
+                <!-- fin -->
+                                 <div class="carta">
+                    <div class="imagen-carta">
+                    <img class="imagen" src="img/eternas.webp" alt="">
+                    </div>
+                    <div class="texto-carta">
+                    <p>Ramos de Rosas Eternas</p>
+                    </div>
+                    <ul>
+                        <li>Diferentes Tamaños </li> 
+                        <li>Varios Diseños</li><br>
+                        <button onclick="eternas()"  class="btn-carta">Ordenar</button>
+                    </ul>
+                </div>
+                <!-- fin -->
+                                                  <div class="carta">
+                    <div class="imagen-carta">
+                    <img class="imagen" src="img/abrigos.JPG" alt="">
+                    </div>
+                    <div class="texto-carta">
+                    <p>Abrigos personalizados</p>
+                    </div>
+                    <ul>
+                        <li>Diferentes Diseños</li> 
+                        <li>Varios Colores</li><br>
+                        <button onclick="abrigos()"  class="btn-carta">Ordenar</button>
+                    </ul>
+                </div>
+                <!-- fin -->
+                       <div class="carta">
+                    <div class="imagen-carta">
+                    <img class="imagen" src="img/bolas.JPG" alt="">
+                    </div>
+                    <div class="texto-carta">
+                    <p>Bolas Navideñas</p>
+                    </div>
+                    <ul>
+                        <li>Perzonalizacion a tu gusto</li> 
+                        <li>Varios Diseños</li><br>
+                        <button onclick="bolas()"  class="btn-carta">Ordenar</button>
+                    </ul>
+                </div>
+                <!-- fin -->
+                <div class="carta">
+                    <div class="imagen-carta">
+                    <img class="imagen" src="img/cajas.JPG" alt="">
+                    </div>
+                    <div class="texto-carta">
+                    <p>Cajas de Regalo</p>
+                    </div>
+                    <ul>
+                        <li>Diferentes Estilos</li> 
+                        <li>Varios Tamaños</li><br>
+                        <button onclick="cajas()"  class="btn-carta">Ordenar</button>
+                    </ul>
+                </div>
+                <!-- fin -->
+                <div class="carta">
+                    <div class="imagen-carta">
+                    <img class="imagen" src="img/pijama.JPG" alt="">
+                    </div>
+                    <div class="texto-carta">
+                    <p>Pijamas personalizadas</p>
+                    </div>
+                    <ul>
+                        <li>Variacion de Pijamas</li> 
+                        <li>Varios Diseños</li><br>
+                        <button onclick="pijama()"  class="btn-carta">Ordenar</button>
+                    </ul>
+                </div>
+                <!-- fin -->
+                                 <div class="carta">
+                    <div class="imagen-carta">
+                    <img class="imagen" src="img/perfumes.JPG" alt="">
+                    </div>
+                    <div class="texto-carta">
+                    <p>Cajas con Perfumes</p>
+                    </div>
+                    <ul>
+                        <li>Elige el que Quieras</li> 
+                        <li>Gran Variacion</li><br>
+                        <button onclick="perfume()"  class="btn-carta">Ordenar</button>
+                    </ul>
+                </div>
+                <!-- fin -->
+                 <div class="carta">
+                     <div class="imagen-carta">
+                    <img class="imagen" src="img/bebe.JPG" alt="">
+                    </div>
+                    <div class="texto-carta">
+                    <p>Ropa de Bebe</p>
+                    </div>
+                    <ul>
+                        <li>Nombres personalizados</li> 
+                        <li>Tu eliges</li><br>
+                        <button onclick="perfume()"  class="btn-carta">Ordenar</button>
+                    </ul>
+                </div>
+                <!-- fin -->
+                                  <div class="carta">
+                     <div class="imagen-carta">
+                    <img class="imagen" src="img/joya.webp" alt="">
+                    </div>
+                    <div class="texto-carta">
+                    <p>Joyas en Cajas</p>
+                    </div>
+                    <ul>
+                        <li>Varias Decoraciones</li> 
+                        <li>Tu eliges la joya</li><br>
+                        <button onclick="perfume()"  class="btn-carta">Ordenar</button>
+                    </ul>
+                </div>
+                <!-- fin -->
+
+
+            
+
+                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="ofertas">
+<div class="of-cn">
+        <h1 class="h1of">Nuestras Ofertas</h1>
+
+
+<div class="card-of-cn">
+
+<div class="card-of carta1">
+    <div class="img-of">
+        <img class="of-img" src="img/oferta.JPG" alt="">
+    </div>
+    <p class="p-of">Taza + Llavero</p>
+    <p class="p-of2">Disponible solo este mes de Mayo</p>
+    <button class="of-btn" onclick="oferta()">Ordenar Oferta</button>
+</div>
+<!-- fin -->
+ <div class="card-of">
+    <div class="img-of">
+        <img class="of-img" src="img/oferta 2.JPG" alt="">
+    </div>
+    <p class="p-of especial">Vaso Termico + Llavero</p>
+    <p class="p-of2">Disponible solo este mes de Mayo</p>
+    <button class="of-btn" onclick="oferta2()">Ordenar Oferta</button>
+</div>
+<!-- fin -->
+  <div class="card-of">
+    <div class="img-of">
+        <img class="of-img" src="img/oferta 3.JPG" alt="">
+    </div>
+    <p class="p-of">Vaso Termico + Llavero</p>
+    <p class="p-of2 especial">Disponible solo este mes de Mayo</p>
+    <button class="of-btn" onclick="oferta3()">Ordenar Oferta</button>
+</div>
+<!-- fin -->
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+<section id="sobrenosotros">
+
+    <div class="fondo-nosotros">
+
+        <div class="h1-nosotros">
+            <h1 class="nostros-h1">Sobre Nosotros</h1>
+        </div>
+        <div class="contenido-nos">
+        <div class="carta-nosotros">
+            <div class="imagen-nosotros">
+                <img class="img-nosotros" src="img/imagen.jpeg" width="230px" alt="">
+            </div>
+
+            <div class="texto-nos">
+                <h1 class="h1-nos">Crystal Mendez</h1>
+                <p class="p-nos">Soy Crystal Mendez, fundadora de Cryss Details. Empecé este emprendimiento con mucho amor y
+                     dedicación, buscando ofrecer productos únicos que transmitan cariño y estilo en cada detalle.</p>
+                <p class=".p-nos2">Cada artículo está hecho o seleccionado con esmero, pensando en brindar experiencias especiales a través de pequeños gestos.</p>
+            </div>
+        </div>
+
+        
+
+        </div>
+
+</section>
+
+
+
+<section id="contacto">
+
+<div class="contac-contenido">
+
+<div class="con-h1">
+    <h1 class="h1-con">Contactanos</h1>
+</div>
+
+<div class="con-main">
+
+
+<ul class="example-2">
+    <li class="icon-content">
+      <a
+        data-social="whatsapp"
+        aria-label="Whatsapp"
+          target="_blank"
+        onclick="(function(el){ const p='18097179875', t=encodeURIComponent('hola'); const m=/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent); el.href = m ? `whatsapp://send?phone=${p}&text=${t}` : `https://web.whatsapp.com/send?phone=${p}&text=${t}`; })(this)"
+      >
+        <div class="filled"></div>
+        <svg
+          xml:space="preserve"
+          viewBox="0 0 24 24"
+          class="bi bi-whatsapp"
+          fill="currentColor"
+          height="24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="currentColor"
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+          ></path>
+        </svg>
+      </a>
+      <div class="tooltip">Whatsapp</div>
+    </li>
+    
+    <li class="icon-content">
+      <a
+        data-social="instagram"
+        aria-label="Instagram"
+        href="https://www.instagram.com/cryssdetails/" target="_blank"
+      >
+        <div class="filled"></div>
+        <svg
+          xml:space="preserve"
+          viewBox="0 0 16 16"
+          class="bi bi-instagram"
+          fill="currentColor"
+          height="16"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="currentColor"
+            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+          ></path>
+        </svg>
+      </a>
+      <div class="tooltip">Instagram</div>
+    </li>
+  </ul>
+  
+    
+</div>
+
+</div>
+
+</section>
+
+<footer>
+    <p>&reg; 2025 Cryss Details</p>
+</footer>
+    
+<script src="js/script.js"></script>
+</body>
+</html>
