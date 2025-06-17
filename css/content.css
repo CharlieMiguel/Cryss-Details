@@ -1,0 +1,202 @@
+#home {
+    background-image: url(../img/fondo.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    position: relative;
+}
+
+#home::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    pointer-events: none;
+    z-index: 1;
+}
+
+#home{
+    position: relative;
+    z-index: 2;
+}
+
+.contenido-home{
+    height: 600px;
+    justify-content: space-around;
+    align-content:  center;
+    font-size: 14px;
+}
+
+.slogan{
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-family: segoe ui;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.slogan span{
+    font-family: tahoma;
+}
+
+.titulo{
+    text-align: center;
+    font-family: tahoma;
+    color: white;
+    font-size: 24px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.pp{
+    padding-top: 150px;
+}
+
+.tarjeta{
+    position: relative;
+    text-align: center;
+    background-color: white;
+    width: 450px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.contenidotarjeta{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+
+}
+
+.tarjetatitulo{
+    font-family: tahoma;
+}
+
+.descripcion{
+    font-family: segoe ui;
+}
+
+.tarjeta:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 30px rgba(90, 88, 88, 0.6);
+}
+
+.contenedorproductos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 10px;
+    padding-bottom: 50px;
+}
+
+.card{
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cardnombre{
+    text-align: center;
+    font-family: tahoma;
+}
+
+.carddescrip{
+    text-align: center;
+    font-family: segoe ui;
+    position: relative;
+    top: 20px;
+}
+
+.btn{
+    border: none;
+    background-color: #f799a8;
+    padding: 10px;
+    width: 250px;
+    margin-top: 50px;
+    font-family: segoe ui;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.btn:hover{
+    background-color: #ffbbc7 ;
+    transition: all 0.3s ease;
+    transform: translateY(5px);
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.4);
+}
+
+.form{
+    width: 500px;
+    margin-bottom:30px ;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+input{
+    margin: 10px;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+}
+textarea{
+    margin: 10px;
+    resize: none;
+    padding-left: 10px;
+    height:100px ;
+    border: none;
+}
+
+input,textarea:focus{
+    outline: none;
+}
+
+
+.botoness{
+    padding: 10px;
+    width: 100px;
+}
+
+.contenidocontact{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+}
+
+.contenidocontact h1{
+    font-family: tahoma;
+    font-size: 18px;
+}
+
+.contenidocontact h3{
+    font-family: segoe ui;
+}
+
+.ubicacion{
+    text-align: center;
+    color: white;
+}

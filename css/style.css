@@ -1,0 +1,174 @@
+:root {
+    --primario: #F9D6DC;
+    --morado: #8D7AC6;
+    --rosado: #F28CA3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #f9b9c1;
+}
+
+header{
+    background-color: var(--primario);
+    text-align: center;
+    font-family: "lilita one";
+    color: var(--morado);
+    font-size: 26px;
+    animation:  opacidad 1.3s;
+}
+
+.l1{
+    position: relative;
+    top: 5px;
+}
+
+.l2{
+    color:  var(--rosado);
+    font-family: "Playwrite DK Loopet";
+    font-size: 15px;
+    position: relative;
+    top: -10px;
+}
+
+.nav-pc{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    animation: opacidad 1.3s;
+}
+
+@keyframes opacidad{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.pc{
+    width: 390px;
+    border-radius: 50px;
+    height: 70px;
+    background-color: #f9b9c0fa;
+}
+
+.pc ul{
+    position: relative;
+    right: 20px;
+}
+
+.pc,.pc ul{
+    display: flex;
+    justify-content:  center;
+    gap: 20px;
+}
+
+.pc li{
+    margin-top: 25px;
+}
+
+.pc ul,.pc li,.pc a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family:sans-serif;
+    transition: all 0.3s ease;
+}
+
+#logo{
+    border-radius:50%;
+    position: relative;
+    right:20px;
+}
+.pc a:hover{
+    color: rgba(255, 255, 255, 0.404);
+    transition: all 0.3s ease;
+}
+
+section{
+    background-color: #d4d3d3a8;
+}
+
+
+footer{
+    height: 200px;
+    background-color: #F28CA3;
+}
+
+.contenidofooter{
+    display: flex;
+    height: 80px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenidofooter ul,.contenidofooter a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+
+.contenidofooter ul{
+    display: flex;
+}
+
+.contenidofooter a{
+    margin: 20px;
+    position: relative;
+    top: 35px;
+    transition: all 0.3s ease;
+}
+
+.contenidofooter a:hover{
+    color: rgba(255, 255, 255, 0.404);
+    transition: all 0.3s ease;
+}
+
+hr{
+    margin: 100px;
+    color: white;
+    border: none;
+    border-top: 2px solid white;
+    opacity: 0.6;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.reservado{
+    color: white;
+    font-family: sans-serif;
+    width: 400px;
+}
+
+.redes a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    transition: all 0.3s ease;
+}
+
+.redes a:hover{
+    color: rgba(255, 255, 255, 0.404);
+    transition: all 0.3s ease;
+}
+
+.icon{
+    margin-left: 8px;
+}
+
+.content2{
+    display: flex;
+    justify-content: space-around;
+}
